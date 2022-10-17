@@ -18,9 +18,8 @@ h1 {
       margin: 0 auto;
 } */
 
-
 /*1. Logo Part  */
-.logo{
+.logo {
   background-color: rgb(55, 55, 165);
   color: white;
 }
@@ -30,6 +29,7 @@ h1 {
 /* NavBar Area */
 .Header-Container {
   background-color: tomato;
+  position: sticky;
 }
 .NavBar_Icon {
   width: 100%;
@@ -62,7 +62,9 @@ h1 {
   color: white;
 }
 
-Contact part p {
+
+/* Contact part */
+ p {
   text-align: center;
 }
 
@@ -72,4 +74,5 @@ Contact part p {
   background-color: black;
   color: white;
   margin-top: 30%;
+  border: 3px solid tomato;
 }

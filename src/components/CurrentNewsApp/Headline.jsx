@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Headline.css"
+import "./DataButton"
+import { DataButton } from "./DataButton";
 //import "./Post.css"
 export function Headline() {
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
-  useEffect((data) => {
+  useEffect(() => {
     axios
     .get(`https://newsapi.org/v2/everything?q=tesla&from=2022-09-17&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`)
-      .then((response) => {
-        console.log(response.data);
-        setNews([...response.data]); 
+      .then(({data}) => {
+        console.log({data});
+        setNews(data?.articles); 
       });
   }, []);
 
@@ -18,10 +20,11 @@ export function Headline() {
     setSearch(e.target.value);
   };
 
-  const filteredNews = news.filter((posts) =>
-    posts.name.toLowerCase().includes(search.toLowerCase())
-  );
-
+  // const filteredNews = news.filter((posts) =>
+  //   posts.name.toLowerCase().includes(search.toLowerCase())
+  // );
+ 
+console.log({news})
    return (
     
     <div className="Main_Container">
@@ -37,13 +40,19 @@ export function Headline() {
           <button className="Search_Btn" >Search </button>
        </form>
        </div>
-        {filteredNews.map((news) => {
+        {news?.map((items) => { 
           return (
            <div className="News-Data">
-           <h1>name={news.articles.name}</h1> 
-           <h1>author={news.articles.author}</h1> 
-           <p> title={news.articles.title} </p>
-           <p>body={news.articles.description}</p> 
+            <img className="Image" src={items.urlToImage}/>
+           <h1>name:{items.name}</h1> 
+           <h1>author:{items.author}</h1> 
+           <p className="Title"> title:{items.title} </p>
+           <h4>Publice Time:-{items.publishedAt}</h4>
+           <p>body:{items.description}</p> 
+           <button className="ReadMore-Btn">
+            <  a href={items.url}>Read More</a>
+           </button>
+           <DataButton/>
           </div>
        );
        }) 

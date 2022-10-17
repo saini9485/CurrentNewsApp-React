@@ -8,6 +8,7 @@ import { Footer } from './components/CurrentNewsApp/Footer';
 import { Header } from './components/CurrentNewsApp/Header';
 import { Headline } from './components/CurrentNewsApp/Headline';
 import { Home } from './components/CurrentNewsApp/Home';
+import Login from './components/CurrentNewsApp/LoginForm/Login';
 
 export function App() {
   return (
@@ -20,10 +21,11 @@ export function App() {
     <Route path="/Home" element={ <Home/>}/>
     <Route path="/About" element={<About/>}/>
     <Route path="/Contact" element={<Contact/>}/>
+    <Route path="/Login" element={<Login/>}/>
+    
     <Route path="*" element={ <ErrorPage/>}/>
-   
    </Routes>
-   {/* <Footer/> */}
+   <Footer/>
    </>
   );
 }
