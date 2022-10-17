@@ -9,7 +9,7 @@ import { Header } from './components/CurrentNewsApp/Header';
 import { Headline } from './components/CurrentNewsApp/Headline';
 import { Home } from './components/CurrentNewsApp/Home';
 
-function App() {
+export function App() {
   return (
    <>
    {/* <Assignment/> */}
@@ -23,9 +23,9 @@ function App() {
     <Route path="*" element={ <ErrorPage/>}/>
    
    </Routes>
-   <Footer/>
+   {/* <Footer/> */}
    </>
   );
 }
 
-export default App;
+// export default App;

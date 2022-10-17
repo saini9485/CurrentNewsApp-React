@@ -1,32 +1,16 @@
-// import React from "react";
-
-// export function Headline() {
-//   return (
-//     <div>
-//       <h1>Current News Headline</h1>
-//       <div className="Head_Input_Area">
-//         <input type="text" placeholder="news" />
-//         <button className="btn">Search</button>
-//       </div>
-
-
-//     </div>
-//   );
-// }
-
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./Headline.css"
 //import "./Post.css"
 export function Headline() {
-  const [post, setPost] = useState([]);
+  const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
-  useEffect(() => {
+  useEffect((data) => {
     axios
-    //   .get(`https://jsonplaceholder.typicode.com/comments`) 
-    .get(`https://newsapi.org/v2/everything?q=tesla&from=2022-09-16&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`)
+    .get(`https://newsapi.org/v2/everything?q=tesla&from=2022-09-17&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`)
       .then((response) => {
         console.log(response.data);
-        setPost([...response.data]); 
+        setNews([...response.data]); 
       });
   }, []);
 
@@ -34,34 +18,36 @@ export function Headline() {
     setSearch(e.target.value);
   };
 
-  const filteredPost = post.filter((posts) =>
+  const filteredNews = news.filter((posts) =>
     posts.name.toLowerCase().includes(search.toLowerCase())
   );
 
    return (
-    <div className="Post-app">
-      <div className="Post-search">
-        <h1 className="Post-text">Search </h1>
+    
+    <div className="Main_Container">
+      <div className="News-search">
+        <h1 className="News-text">Search News</h1>
         <form className="Head_Input_Area">
           <input
-            className="Post-input"
+            className="News-input"
             type="text"
             onChange={handleChange}
-            placeholder="Search"
+            placeholder="Search News"
           />
-          <button className="Search_Btn" >Search Post</button>
+          <button className="Search_Btn" >Search </button>
        </form>
        </div>
-        {filteredPost.map((post) => {
+        {filteredNews.map((news) => {
           return (
-           <div>
-           <h1>name={post.name}</h1> 
-           <h1>author={post.articles.author}</h1> 
-           <p> title={post.title} </p>
-           <p>body={post.description}</p> 
+           <div className="News-Data">
+           <h1>name={news.articles.name}</h1> 
+           <h1>author={news.articles.author}</h1> 
+           <p> title={news.articles.title} </p>
+           <p>body={news.articles.description}</p> 
           </div>
        );
-      })}
+       }) 
+       } 
    </div>
    )
 }

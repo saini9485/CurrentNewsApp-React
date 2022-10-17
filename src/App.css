@@ -1,9 +1,12 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
-h1{
+body {
+  background-color: white;
+}
+h1 {
   text-align: center;
 }
 /* input[type="text"] {
@@ -16,14 +19,16 @@ h1{
 } */
 
 
-/* InputArea */
-.Head_Input_Area{
-  display: flex;
-  justify-content:center;
+/*1. Logo Part  */
+.logo{
+  background-color: rgb(55, 55, 165);
+  color: white;
 }
-
+.fa {
+  margin: 20px;
+}
 /* NavBar Area */
-.Header-Container{
+.Header-Container {
   background-color: tomato;
 }
 .NavBar_Icon {
@@ -32,43 +37,38 @@ h1{
   display: inline-flex;
   text-align: center;
   justify-content: center;
-
 }
-/* .Nav_Icons li{
-  text-align: center;
-  margin: 15px auto;
-} */
-
-.Nav_Icons { 
+.Nav_Icons {
   display: flex;
   margin-right: 30px;
   flex-direction: row;
-  justify-content: flex-end;
-  text-decoration: none;
-  
-  }
- 
-  .Nav_Icons li { 
-  margin: 15px;
-  text-decoration: none; 
-  }
-.Nav_Icons ul{
-outline: none;
-text-decoration: none;
+  justify-content: space-around;
 }
-.nav-links{
+.Nav_Icons li {
+  margin: 15px;
   text-decoration: none;
- color: black;
- font-weight: bold;
+  list-style-type: none;
+  color: white;
+}
+.active-link {
+  font-weight: bold;
+  color: blue;
+}
+#links {
+  text-decoration: none;
+  font-weight: bold;
+}
+.not-active {
+  color: white;
 }
 
-/* Contact part */
-p{
+Contact part p {
   text-align: center;
 }
 
+
 /* Footer Part */
-.Footer{
+.Footer {
   background-color: black;
   color: white;
   margin-top: 30%;
