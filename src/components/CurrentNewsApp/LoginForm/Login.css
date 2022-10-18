@@ -38,7 +38,7 @@
     text-align: center;
     border-radius: 5px;
   }
-  button {
+  .LoginPage-Btn {
     height: 30px;
     width: 25%;
     background-color: rgb(17, 77, 230);
@@ -47,7 +47,7 @@
     font-weight: bold;
     color: white;
   }
-  button:hover{
+  .LoginPage-Btn:hover{
     background-color: aqua;
     color: black;
   }

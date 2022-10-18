@@ -26,6 +26,27 @@ h1 {
 .fa {
   margin: 20px;
 }
+
+/* Toggle Part */
+
+.Toggle-Area{
+ margin-bottom: 3px;
+ /* background-color: blue; */
+}
+.Dark-Btn{
+background-color: black;
+color: white;
+border-radius: 10px;
+font-weight: bold;
+width: 100px;
+}
+.Light-Btn{
+background-color: lightcoral;
+color: black;
+font-weight: bold;
+border-radius: 10px;
+width: 100px;
+}
 /* NavBar Area */
 .Header-Container {
   background-color: tomato;
@@ -75,4 +96,7 @@ h1 {
   color: white;
   margin-top: 30%;
   border: 3px solid tomato;
+}
+h4{
+  color: white;
 }

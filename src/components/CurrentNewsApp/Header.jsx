@@ -1,31 +1,29 @@
-import React from "react";
+import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
-// import { useState } from "react";
-// const [toggle, setToggle] = useState(true);
 
 
+export function Header() {  
+const [toggle, setToggle] = useState(true);
+if (toggle) {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+  } else {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+  }
 
-
-// if (toggle) {
-//     document.body.style.backgroundColor = "white";
-//     document.body.style.color = "black";
-//   } else {
-//     document.body.style.backgroundColor = "black";
-//     document.body.style.color = "white";
-//   }
-export function Header() {
   return (
     <div>
       <div className="logo">
        <h1 className="Name"><i class="fa fa-desktop" aria-hidden="true"></i>Current_News</h1>
        </div>
-{/* <div>
+<div className="Toggle-Area">
     {toggle ? (
-      <button onClick={() => setToggle(!toggle)}>DARK THEME</button>
+      <button className="Dark-Btn" onClick={() => setToggle(!toggle)}>DARK THEME</button>
     ) : (
-      <button onClick={() => setToggle(!toggle)}>LIGHT THEME</button>
+      <button className="Light-Btn" onClick={() => setToggle(!toggle)}>LIGHT THEME</button>
     )}
-  </div> */}
+  </div>
         <div className="Header-Container">
             {/* <div>
            <h2>Current News</h2> 

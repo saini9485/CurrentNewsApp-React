@@ -57,7 +57,7 @@ function Login(){
                         <div className="input_space">
                             <input placeholder="Password" type='password' ref={password} />
                         </div>
-                        <button onClick={handleSignIn}>Sign In</button>
+                        <button className="LoginPage-Btn" onClick={handleSignIn}>Sign In</button>
                 </div>
                 :
                 <div className="Login-Container">
@@ -77,7 +77,7 @@ function Login(){
                         <div className="input_space">
                             <input minLength={7} placeholder="ConfirmPassword" type='password' ref={ConfirmPassword} required />
                         </div>
-                        <button onClick={handleClick}>Sign Up</button>
+                        <button className="LoginPage-Btn" onClick={handleClick}>Sign Up</button>
                 </div>)
             }
         </div>

@@ -20,7 +20,7 @@ export function Footer() {
   return (
     <div>
       <div className="Footer">
-        <h1>Footer</h1>
+      <h4>Developed by Rajesh Saini</h4>
         <h1>{currentTime}</h1>
         {/* <h1>{time}</h1> */}
         <h1>{date.currentDateTime}</h1>
