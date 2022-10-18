@@ -23,13 +23,16 @@ h1 {
   background-color: rgb(55, 55, 165);
   color: white;
 }
-.fa {
+.fa-desktop {
   margin: 20px;
 }
 
 /* Toggle Part */
 
 .Toggle-Area{
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
  margin-bottom: 3px;
  /* background-color: blue; */
 }
@@ -85,7 +88,7 @@ width: 100px;
 
 
 /* Contact part */
- p {
+ .News_Contact {
   text-align: center;
 }
 

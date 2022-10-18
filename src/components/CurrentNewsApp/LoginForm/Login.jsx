@@ -52,10 +52,10 @@ function Login(){
                         {/* <h1>Hello, {localName} Congratulation</h1> */}
                         <h2>Please Login</h2>
                         <div className="input_space">
-                            <input placeholder="Email" type='text' ref={email} />
+                            <input  className="Login_Input" placeholder="Email" type='text' ref={email} />
                         </div>
                         <div className="input_space">
-                            <input placeholder="Password" type='password' ref={password} />
+                            <input className="Login_Input" placeholder="Password" type='password' ref={password} />
                         </div>
                         <button className="LoginPage-Btn" onClick={handleSignIn}>Sign In</button>
                 </div>
@@ -65,17 +65,19 @@ function Login(){
             <img src="/photo.jpeg" alt ="image"/>
             </div>
                     <div>   <h2>Sign Up Form </h2>      </div>
+                    <div >
                         <div className="input_space">
-                            <input minLength={6} placeholder="FullName" type='text' ref={Fullname} required/>
+                            <input className="Login_Input" minLength={6} placeholder="FullName" type='text' ref={Fullname} required/>
                         </div>
                         <div className="input_space">
-                            <input placeholder="Email" type='text' ref={email} required />
+                            <input className="Login_Input" placeholder="Email" type='text' ref={email} required />
                         </div>
                         <div className="input_space">
-                            <input minLength={7} placeholder="Password" type='password' ref={password} required />
+                            <input className="Login_Input" minLength={7} placeholder="Password" type='password' ref={password} required />
                         </div>
                         <div className="input_space">
-                            <input minLength={7} placeholder="ConfirmPassword" type='password' ref={ConfirmPassword} required />
+                            <input  className="Login_Input" minLength={7} placeholder="ConfirmPassword" type='password' ref={ConfirmPassword} required />
+                        </div>
                         </div>
                         <button className="LoginPage-Btn" onClick={handleClick}>Sign Up</button>
                 </div>)

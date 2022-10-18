@@ -23,11 +23,10 @@
   color: black;
 }
 
-
 /* Data Part */
-.News-Data{
+.News_Cart{
   height: 470px;
-  width: 400px;
+  width: 550px;
    margin: 10px;
    padding-bottom: 10px;
   background-color: white;
@@ -42,10 +41,14 @@
   overflow: scroll;
   
 }
+.News_Data{
+  padding: 20px;
+}
  img{
   height: fit-content;
-    width: 400px;
+    width: fit-content;
     object-fit: cover;
+    margin-right: 10px;
 }
 .Title{
   color: red;
@@ -56,28 +59,113 @@
   display: flex;
   flex-direction: row;
   display: inline;
-  margin: 10px;
   border: none;
   background-color: transparent;
-  font-size: 1.2rem;
   cursor: pointer;
 }
+
+
+/* Icons Part */
 .Three-Btn{
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
-/* .BookMark-Btn{
-  display: flex;
-  justify-content: flex-end;
-} */
+.fa-heart{
+  margin-left: 10px;
+}
+.fa-heart:hover{
+color: red;
+}
+.fa-bookmark:hover{
+color: blue;
+
+}
+
 .ReadMore-Btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-left: 250px;
   border: none;
   text-decoration: none;
   list-style-type: none;
   font-weight: bold;
+}
+
+
+/* Activity Items Part */
+.like_icons{
+  margin-left: 10px;
+  margin-top: 0%;
+}
+.fa-thumbs-down{
+}
+.LikeDislike_Count{
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-left: 10px;
+}
+.post_comment{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 10px;
+}
+.post_time{
+  font-size:small;
+  margin-left: 10px;
+}
+#id {
+  height: 1000px;
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+
+}
+.Likes_Count{
+margin-left: 17px;
+}
+.add-comment{
+  display: flex;
+  margin-left: 10px;
+  justify-content: flex-end;
+  
+}
+.News_comment_area{
+  border: none;
+  outline: none;
+  width: 350px;
+}
+.Comment_Btn{
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid blue;
+  align-self: flex-end;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+
+
+}
+.Input_Comment{
+  width: 100%;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+.News_Delete_Btn{
+  text-align: center;
+  margin: auto;
+}
+.fa-trash{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.fa-trash:hover{
+  color: red;
 }

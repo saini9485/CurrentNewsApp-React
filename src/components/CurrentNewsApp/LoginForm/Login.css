@@ -1,5 +1,5 @@
 * {
-    text-align: center;
+    /* text-align: center; */
     padding: 0%;
     margin: 0%;
   }
@@ -31,7 +31,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  input {
+  .Login_Input {
     height: 40px;
     width: 60%;
     font-size: 18px;
@@ -61,12 +61,30 @@
     color: white;
     font-weight: 400;
     margin-top: 10%;
+    height: 30px;
+    width: 25%;
+    background-color: rgb(17, 77, 230);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  .logout:hover{
+    background-color: aqua;
+    color: black;
   }
   .delete {
     margin-right: 5px;
     color: white;
     background-color: rgb(19, 103, 142);
     font-weight: 400;
+    height: 30px;
+    width: 25%;
+    background-color: rgb(17, 77, 230);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
   }
   .delete:hover{
     background-color: red;
