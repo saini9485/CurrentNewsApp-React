@@ -50,7 +50,7 @@
 }
  img{
   height: fit-content;
-    width: fit-content;
+    width: 500px;
     object-fit: cover;
     margin-right: 10px;
 }
@@ -80,7 +80,18 @@
 }
 .fa-heart:hover{
 color: red;
+background-position:right ;
+animation: animate .8s steps(28) 1;
 }
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
 .fa-bookmark:hover{
 color: blue;
 
@@ -131,6 +142,7 @@ color: blue;
   margin-top: 5px;
 
 }
+
 .Likes_Count{
 margin-left: 17px;
 }

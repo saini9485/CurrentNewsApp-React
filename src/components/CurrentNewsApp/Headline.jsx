@@ -7,28 +7,44 @@ export function Headline() {
   const [news, setNews] = useState([]);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
+  const [comment,setComment]=useState([])
+  const[comments,setComments] =useState("") 
+  const [filter, setFilter] = useState([])
   useEffect(() => {
     const LoadNews = async () => {
       setLoading(true);
       const res = await axios.get(
-        `https://newsapi.org/v2/everything?q=tesla&from=2022-09-18&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
+        `https://newsapi.org/v2/everything?q=tesla&from=2022-09-19&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
       );
+      console.log(res.data.articles)
       // .then(({ data }) => {
       // console.log({ data });
-      setNews(res.data?.articles);
+      setNews(res.data.articles);
       setLoading(false);
+      setFilter(res.data.articles)
+      // console.log("newss",news)
       // });
     };
     LoadNews();
+
   }, []);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
 
-  // const filteredNews = news.filter((data) =>
-  //   data.name.toLowerCase().includes(search.toLowerCase())
-  // );
+ useEffect(()=>{
+  console.log(search)
+  const filteredNews = news.filter((data) =>
+  // console.log(data)
+    data.source.name.toLowerCase().includes(search.toLowerCase())
+  
+   );
+//   // console.log("filter" ,filteredNews)
+ setFilter(filteredNews )
+ },[search])
+// console.log("news",news)
+
 
   const handleRemove = (url) => {
     // window.confirm(" Are You Sure Delete News")
@@ -36,6 +52,19 @@ export function Headline() {
     const FilterData = news.filter((items) => items.url !== url);
     setNews(FilterData);
   };
+
+const HandleComment = (e)=>{
+  if(comments==""){
+    alert("please Enter Comment")
+  }else{
+    setComment([...comment,comments])
+  setComments("")
+  }
+  
+  // alert("hi")
+// setComment(e.target.value)
+}
+
 
   return (
     <div className="Main_Container">
@@ -51,11 +80,11 @@ export function Headline() {
           <button className="Search_Btn">Search</button>
         </form>
       </div>
-      {loading ? (<h1><i i className="fa fa-refresh fa-spin"></i></h1> ): (
-      news
-        // .filter((user)=>
-        // user.name.toLowerCase().includes(search.toLocaleLowerCase()))
-        ?.map((items) => {
+      {loading ? (<h1><i className="fa fa-refresh fa-spin"></i></h1> ): (
+       
+
+       filter.map((items) => {
+        // console.log(items)
           return (
             <div className="News_Cart">
               <div className="News_Data" key={items.url}>
@@ -73,17 +102,27 @@ export function Headline() {
                   {/* <h5 className="Likes_Count"> 5 likes</h5> */}
                   <div className="post_comment">
                     <h5>userName</h5>
-                    <p className="NewsComment">Comment</p>
+                    <p className="NewsComment">{comment}</p>
+
                   </div>
                   <p className="post_time">6 hours</p>
                 </div>
+                 {/* <div className="Add_Comment"> */}
+                  {/* {comment.map((itemss)=>{ */}
+                       {/* <p type="text">{comment}</p> */}
+                      {/* <h1>hihi</h1> */}
+                  {/* })} */}
+                  {/* </div> */}
                 <div className="add-comment">
+                
                   <input
                     type="text"
+                    value={comments}
                     className="Input_Comment"
-                    placeholder="😒Add Comments...."
+                    placeholder={"😒Add Comments...."}
+                    onChange={(e) => setComments(e.target.value)}
                   ></input>
-                  <button className="Comment_Btn">Comment</button>
+                  <button className="Comment_Btn" onClick={HandleComment}>Comment</button>
                 </div>
                 <div className="News_Delete_Btn">
                   <i
@@ -100,3 +139,23 @@ export function Headline() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
