@@ -41,6 +41,10 @@
   overflow: scroll;
   
 }
+.fa-spin{
+  text-align: center;
+  margin-top: 10%;
+}
 .News_Data{
   padding: 20px;
 }
@@ -81,7 +85,10 @@ color: red;
 color: blue;
 
 }
-
+.SavedUnSaved{
+  margin-left: 20%;
+  
+}
 .ReadMore-Btn {
   display: flex;
   flex-direction: row;
