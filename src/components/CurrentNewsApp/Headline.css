@@ -33,8 +33,9 @@
 
 /* Data Part */
 .News_Cart{
-   /* height: 470px; */
-  width: 90%; 
+    height: 700px; 
+   width: 600px;
+  /* width: 90%;  */
    margin: 10px;
    padding-bottom: 15px;
   background-color: white;
@@ -48,7 +49,8 @@
   border: 2px solid white;
   border-bottom: 2px solid black;
   /* overflow: scroll; */
-  border: 1px solid black;
+  border: 1px solid rgb(7, 7, 7);
+  background-color: wheat;
   
 }
 .fa-spin{
@@ -59,11 +61,12 @@
   padding: 20px;
 }
  .Image{
-    width:300px ;
+    width:500px ;
     height:300px ;
-    float: left;
+    /* float: left; */
     border-radius: 5px;
     margin-right: 10px;
+  
 }
 .Title{
   color: red;
@@ -186,6 +189,7 @@ margin-left: 17px;
   border-top: none;
   border-left: none;
   border-right: none;
+  background-color: wheat;
 
 }
 .News_Delete_Btn{

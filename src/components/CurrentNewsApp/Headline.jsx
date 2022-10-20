@@ -14,7 +14,7 @@ export function Headline() {
     const LoadNews = async () => {
       setLoading(true);
       const res = await axios.get(
-        `https://newsapi.org/v2/everything?q=tesla&from=2022-10-20&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
+        `https://newsapi.org/v2/everything?q=tesla&from=2022-09-20&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
       );
       console.log(res.data.articles);
       // .then(({ data }) => {
@@ -45,8 +45,9 @@ export function Headline() {
 
   const handleRemove = (url) => {
     // alert("Deleted News");
-    console.log("remove");
+    // console.log("remove");
     const FilterData = news.filter((items) => items.url !== url);
+    console.log("deleteData",FilterData)
     setNews(FilterData);
   };
 
@@ -123,7 +124,7 @@ export function Headline() {
                 <div className="News_Delete_Btn">
                   <i
                     class="fa fa-trash"
-                    aria-hidden="true"
+                    aria-hidden="true" key={items.url}
                     onClick={() => handleRemove(items.url)}
                   ></i>
                 </div>

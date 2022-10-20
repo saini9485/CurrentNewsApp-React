@@ -10,14 +10,14 @@ export function Header() {
     document.body.style.color = "white";
   }
 
-  let showdate = new Date();
-  let dispalytodaydate =
-    showdate.getDate() +
-    "/" +
-    (showdate.getMonth() + 1) +
-    "/" +
-    showdate.getFullYear();
-  let dt = showdate.toDateString();
+  // let showdate = new Date();
+  // let dispalytodaydate =
+  //   showdate.getDate() +
+  //   "/" +
+  //   (showdate.getMonth() + 1) +
+  //   "/" +
+  //   showdate.getFullYear();
+  // let dt = showdate.toDateString();
 
   return (
     <div>
@@ -26,7 +26,8 @@ export function Header() {
           {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
           <img  className="Header_Logo" src="/RajeshLogo.jpeg" alt ="image"/>
         </div>
-        <h1 className="Name_Logo">Current_News</h1>
+        <h1 className="Name_Logo"> <span>Current</span>_News</h1>
+        {/* <h1><span class="blue">Rajesh </span> Saini</h1> */}
         <div className="Search_Btn_Header">
           <input
             className="Search_Input_Box"
@@ -39,7 +40,7 @@ export function Header() {
           </button>
         </div>
         <div>
-          <h4 className="Header_Current_Date">{dt}</h4>
+          {/* <h4 className="Header_Current_Date">{dt}</h4> */}
         </div>
         <div className="Toggle-Area">
           {toggle ? (
