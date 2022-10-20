@@ -5,66 +5,62 @@ import "./DataButton";
 import { DataButton } from "./DataButton";
 export function Headline() {
   const [news, setNews] = useState([]);
-  const [search, setSearch] = useState("");  
-  const [loading, setLoading] = useState(false); 
-  const [comment,setComment]=useState([])
-  const[comments,setComments] =useState("") 
-  const [filter, setFilter] = useState([])
+  const [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [comment, setComment] = useState([]);
+  const [comments, setComments] = useState("");
+  const [filter, setFilter] = useState([]);
   useEffect(() => {
     const LoadNews = async () => {
       setLoading(true);
       const res = await axios.get(
-        `https://newsapi.org/v2/everything?q=tesla&from=2022-09-19&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
+        `https://newsapi.org/v2/everything?q=tesla&from=2022-10-20&sortBy=publishedAt&apiKey=846fd227de084ee2ae29d9474c3e1a43`
       );
-      console.log(res.data.articles)
+      console.log(res.data.articles);
       // .then(({ data }) => {
       // console.log({ data });
       setNews(res.data.articles);
       setLoading(false);
-      setFilter(res.data.articles)  
+      setFilter(res.data.articles);
       // console.log("newss",news)
       // });
     };
     LoadNews();
-
   }, []);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
   };
 
- useEffect(()=>{
-  console.log(search)
-  const filteredNews = news.filter((data) =>
-  // console.log(data)
-    data.source.name.toLowerCase().includes(search.toLowerCase())
-  
-   );
-//   // console.log("filter" ,filteredNews)
- setFilter(filteredNews )
- },[search])
-// console.log("news",news)
-
+  useEffect(() => {
+    console.log(search);
+    const filteredNews = news.filter((data) =>
+      // console.log(data)
+      data.source.name.toLowerCase().includes(search.toLowerCase())
+    );
+    //   // console.log("filter" ,filteredNews)
+    setFilter(filteredNews);
+  }, [search]);
+  // console.log("news",news)
 
   const handleRemove = (url) => {
-    // window.confirm(" Are You Sure Delete News")
-    alert("Deleted News");
+    // alert("Deleted News");
+    console.log("remove");
     const FilterData = news.filter((items) => items.url !== url);
     setNews(FilterData);
   };
 
-const HandleComment = (e)=>{
-  if(comments==""){
-    alert("please Enter Comment")
-  }else{
-    setComment([...comment,comments])
-  setComments("")
-  }
-  
-  // alert("hi")
-// setComment(e.target.value)
-}
+  const HandleComment = (e) => {
+    if (comments == "") {
+      alert("please Enter Comment");
+    } else {
+      setComment([...comment, comments]);
+      setComments("");
+    }
 
+    // alert("hi")
+    // setComment(e.target.value)
+  };
 
   return (
     <div className="Main_Container">
@@ -80,41 +76,39 @@ const HandleComment = (e)=>{
           <button className="Search_Btn">Search</button>
         </form>
       </div>
-      {loading ? (<h1><i className="fa fa-refresh fa-spin"></i></h1> ): (
-       
-
-       filter.map((items) => {
-        // console.log(items)
+      {loading ? (
+        <h1>
+          <i className="fa fa-refresh fa-spin"></i>
+        </h1>
+      ) : (
+        filter.map((items) => {
+          // console.log(items)
           return (
             <div className="News_Cart">
               <div className="News_Data" key={items.url}>
                 <img className="Image" src={items.urlToImage} />
-                <h1>name:{items.source.name}</h1>
-                <h1>author:{items.author}</h1>
+                {/* <div></div> */}
+                <h2>name:{items.source.name}</h2>
+                <h2>author:{items.author}</h2>
                 <p className="Title"> title:{items.title} </p>
-                <h4>Publice Time:-{items.publishedAt}</h4>
+                {/* <h4>Publice Time:-{items.publishedAt}</h4> */}
                 <p>body:{items.description}</p>
-                <a href={items.url} className="ReadMore-Btn">
-                  Read More...
-                </a>
+                <div className="ReadMore-Btn">
+                  <a href={items.url}>Read More...</a>
+                </div>
                 <DataButton />
+
                 <div className="like_icons">
-                  {/* <h5 className="Likes_Count"> 5 likes</h5> */}
+                  <div className="Publice_Time">
+                    <h5>Publice Time:</h5>
+                    <p>{items.publishedAt}</p>
+                  </div>
                   <div className="post_comment">
                     <h5>userName</h5>
                     <p className="NewsComment">{comment}</p>
-
                   </div>
-                  <p className="post_time">6 hours</p>
                 </div>
-                 {/* <div className="Add_Comment"> */}
-                  {/* {comment.map((itemss)=>{ */}
-                       {/* <p type="text">{comment}</p> */}
-                      {/* <h1>hihi</h1> */}
-                  {/* })} */}
-                  {/* </div> */}
                 <div className="add-comment">
-                
                   <input
                     type="text"
                     value={comments}
@@ -122,7 +116,9 @@ const HandleComment = (e)=>{
                     placeholder={"😒Add Comments...."}
                     onChange={(e) => setComments(e.target.value)}
                   ></input>
-                  <button className="Comment_Btn" onClick={HandleComment}>Comment</button>
+                  <button className="Comment_Btn" onClick={HandleComment}>
+                    Comment
+                  </button>
                 </div>
                 <div className="News_Delete_Btn">
                   <i
@@ -135,27 +131,7 @@ const HandleComment = (e)=>{
             </div>
           );
         })
-         )}
+      )}
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

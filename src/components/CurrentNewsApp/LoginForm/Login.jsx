@@ -50,7 +50,7 @@ function Login(){
             (show?
                 <div className="Sign-container">
                         {/* <h1>Hello, {localName} Congratulation</h1> */}
-                        <h2>Please Login</h2>
+                        <h2 className="SignUp_Form_Text">Please Login</h2>
                         <div className="input_space">
                             <input  className="Login_Input" placeholder="Email" type='text' ref={email} />
                         </div>
@@ -64,7 +64,7 @@ function Login(){
                   <div className="SignUpPageProfile">
             <img src="/photo.jpeg" alt ="image"/>
             </div>
-                    <div>   <h2>Sign Up Form </h2>      </div>
+                    <div className="SignUp_Form_Text">   <h2>Sign Up Form </h2>      </div>
                     <div >
                         <div className="input_space">
                             <input className="Login_Input" minLength={6} placeholder="FullName" type='text' ref={Fullname} required/>
