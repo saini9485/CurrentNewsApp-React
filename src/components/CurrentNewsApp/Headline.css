@@ -1,3 +1,11 @@
+.News-text{
+  color: red;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+
+}
+
+
 /* InputArea */
 .Head_Input_Area {
   display: flex;

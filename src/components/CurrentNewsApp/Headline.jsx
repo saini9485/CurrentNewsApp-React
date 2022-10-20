@@ -5,8 +5,8 @@ import "./DataButton";
 import { DataButton } from "./DataButton";
 export function Headline() {
   const [news, setNews] = useState([]);
-  const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");  
+  const [loading, setLoading] = useState(false); 
   const [comment,setComment]=useState([])
   const[comments,setComments] =useState("") 
   const [filter, setFilter] = useState([])
@@ -21,7 +21,7 @@ export function Headline() {
       // console.log({ data });
       setNews(res.data.articles);
       setLoading(false);
-      setFilter(res.data.articles)
+      setFilter(res.data.articles)  
       // console.log("newss",news)
       // });
     };
@@ -68,8 +68,8 @@ const HandleComment = (e)=>{
 
   return (
     <div className="Main_Container">
+      <h1 className="News-text">Top Business HeadLine News</h1>
       <div className="News-search">
-        <h1 className="News-text">Search News</h1>
         <form className="Head_Input_Area">
           <input
             className="News-input"

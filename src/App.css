@@ -18,50 +18,97 @@ h1 {
       margin: 0 auto;
 } */
 
-/*1. Logo Part  */
-.logo {
+/*1. Main_header_Part   */
+.Main_Head_Bar  {
   background-color: rgb(55, 55, 165);
   color: white;
+  display: flex;
+  height: 50px;
+  /* width: 50px; */
+}
+
+.Header_Logo{
+  text-align: center;
+  margin-top: .4%;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 180%;
+}
+.Search_Input_Box {
+  height: 33px;
+  text-align: center;
+  margin: auto;
+  width: 300px;
+  min-width: 100px;
+  /* border-radius: 10px; */
+  border-top-left-radius:10px ;
+  border-bottom-left-radius: 10px;
+  border-bottom: 2px solid black;
 }
 .fa-desktop {
-  margin: 20px;
+ color: red;
 }
+.News_Search_Btn{
+  height: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+
+.Search_Btn_Header{
+  margin: auto;
+}
+
+.Header_Current_Date{
+  margin-top: 15px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: bisque;
+  color: black;
+}
+
+
 
 /* Toggle Part */
 
 .Toggle-Area{
-  display: flex;
-  justify-content: center;
-  margin-top: 3px;
- margin-bottom: 3px;
- /* background-color: blue; */
+  margin-right: 20px;
 }
-.Dark-Btn{
-background-color: black;
-color: white;
-border-radius: 10px;
-font-weight: bold;
-width: 100px;
+.Dark-Btn {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-.Light-Btn{
-background-color: lightcoral;
-color: black;
-font-weight: bold;
-border-radius: 10px;
-width: 100px;
+.Light-Btn {
+  background-color: lightcoral;
+  color: black;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 /* NavBar Area */
 .Header-Container {
   background-color: tomato;
   position: sticky;
 }
-.NavBar_Icon {
+/* .NavBar_Icon {
   width: 100%;
   display: flex;
   display: inline-flex;
   text-align: center;
-  justify-content: center;
-}
+  justify-content: space-around;
+} */
 .Nav_Icons {
   display: flex;
   margin-right: 30px;
@@ -86,12 +133,10 @@ width: 100px;
   color: white;
 }
 
-
 /* Contact part */
- .News_Contact {
+.News_Contact {
   text-align: center;
 }
-
 
 /* Footer Part */
 .Footer {
@@ -100,6 +145,6 @@ width: 100px;
   margin-top: 30%;
   border: 3px solid tomato;
 }
-h4{
+h4 {
   color: white;
 }
