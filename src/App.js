@@ -6,7 +6,7 @@ import Contact from './components/CurrentNewsApp/Contact';
 import ErrorPage from './components/CurrentNewsApp/ErrorPage';
 import { Footer } from './components/CurrentNewsApp/Footer';
 import { Header } from './components/CurrentNewsApp/Header';
-import { Headline } from './components/CurrentNewsApp/Headline';
+// import { Headline } from './components/CurrentNewsApp/Headline';
 import { Home } from './components/CurrentNewsApp/Home';
 import Login from './components/CurrentNewsApp/LoginForm/Login';
 
@@ -17,7 +17,7 @@ export function App() {
 
    <Header/>
    <Routes>
-    <Route path="/" element={<Headline/>}/>
+    {/* <Route path="/" element={<Headline/>}/> */}
     <Route path="/Home" element={ <Home/>}/>
     <Route path="/About" element={<About/>}/>
     <Route path="/Contact" element={<Contact/>}/>

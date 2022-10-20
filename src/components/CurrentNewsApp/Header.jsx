@@ -26,7 +26,7 @@ export function Header() {
           {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
           <img  className="Header_Logo" src="/RajeshLogo.jpeg" alt ="image"/>
         </div>
-        <h1 className="Name_Logo"> <span>Current</span>_News</h1>
+        <h1 className="Name_Logo"> <span className="News_Name">Current</span>_News</h1>
         {/* <h1><span class="blue">Rajesh </span> Saini</h1> */}
         <div className="Search_Btn_Header">
           <input

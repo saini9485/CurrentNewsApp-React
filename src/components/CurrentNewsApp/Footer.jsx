@@ -41,6 +41,9 @@ export function Footer() {
         <h1>{CurrentDate}</h1>
       </div>
       <div className="Footer_Social_Media_Icons">
+        {/* <a href="#"> */}
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+        {/* </a> */}
         <a href="#">
           <i className="fa-brands fa-facebook"></i>
         </a>
@@ -63,7 +66,6 @@ export function Footer() {
           {" "}
           <i className="fa-brands fa-square-whatsapp"></i>
         </a>
-       
       </div>
     </div>
   );

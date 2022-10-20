@@ -19,6 +19,10 @@ h1 {
 } */
 
 /*1. Main_header_Part   */
+
+.News_Name{
+  color: red
+}
 .Main_Head_Bar  {
   background-color: rgb(55, 55, 165);
   color: white;
@@ -146,9 +150,6 @@ h1 {
   color: white;
 }
 
-/* Contact part */
-.News_Contact {
-  text-align: center;
-}
+
 
 

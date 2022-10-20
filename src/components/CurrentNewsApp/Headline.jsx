@@ -45,7 +45,7 @@ export function Headline() {
 
   const handleRemove = (url) => {
     // alert("Deleted News");
-    // console.log("remove");
+    console.log("remove");
     const FilterData = news.filter((items) => items.url !== url);
     console.log("deleteData",FilterData)
     setNews(FilterData);

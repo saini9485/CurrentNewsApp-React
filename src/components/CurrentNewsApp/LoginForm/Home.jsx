@@ -12,7 +12,7 @@ function Home() {
 
     return (
         <div className="Home-Container">
-            <h2 className="SignUp_Form_Text">Congratulation To OurPage</h2>
+            <h2 >Congratulation To OurPage</h2>
              <div className="HomePageImage">
             <img src="/photo.jpeg" alt ="image"/>
             </div>
