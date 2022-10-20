@@ -23,7 +23,8 @@ export function Header() {
     <div>
       <div className="Main_Head_Bar">
         <div className="Header_Logo">
-          <i class="fa fa-desktop" aria-hidden="true"></i>
+          {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
+          <img  className="Header_Logo" src="/RajeshLogo.jpeg" alt ="image"/>
         </div>
         <h1 className="Name_Logo">Current_News</h1>
         <div className="Search_Btn_Header">
