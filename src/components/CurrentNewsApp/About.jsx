@@ -19,6 +19,18 @@ export function About() {
             Email :{" "}
             <span className="About_Detailes_Right">saini222302@gmail.com</span>
           </h2>
+          <h2 className="About_Detailes_Left">
+            Experience :{" "}
+            <span className="About_Detailes_Right">6 Months Aircampus BootCamp Font-End Development</span>
+          </h2>
+          <h2 className="About_Detailes_Left">
+            Currently Working :{" "}
+            <span className="About_Detailes_Right">Learing Full stack Development at Aircampus BootCamp </span>
+          </h2>
+          <h2 className="About_Detailes_Left">
+            Skills :{" "}
+            <span className="About_Detailes_Right">HTML5 || CSS3 || Javascript || React.JS ||Git & Github|| REST APIs ||DSA</span>
+          </h2>
           <a
             class="resume"
             href="https://drive.google.com/file/d/1Gg5JgF5WgH1FeZ9kEJ6Er2pmwVDbqCHO/view?usp=sharing"

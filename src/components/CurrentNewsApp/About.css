@@ -4,7 +4,7 @@
     width: 90%;
     height: 80%;
     margin: auto;
-    background-color: rgb(124, 205, 42);
+    background-color: rgb(186, 194, 190);
 }
 .Top_heading{
     font-family: "Trirong", serif;
@@ -22,9 +22,10 @@
 
 .About_Detailes_Right{
     color: black;
+    font-size: medium;
 }
 .image {
-    width: 25rem;
+    width: 20rem;
     height: 20rem;
     border-radius: 10%;
 }

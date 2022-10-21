@@ -37,32 +37,32 @@ export function Footer() {
         </h4>
       </div>
       <div className="Date_Time">
-        <h1>{currentTime}</h1>
         <h1>{CurrentDate}</h1>
+         <h1>, {currentTime}</h1>
       </div>
       <div className="Footer_Social_Media_Icons">
-        {/* <a href="#"> */}
-        <i class="fa fa-github-square" aria-hidden="true"></i>
-        {/* </a> */}
-        <a href="#">
+        <a href="https://github.com/saini9485">
+        <i class="fa fa-github-square" aria-hidden="true"></i>Github
+        </a>
+        <a href="https://www.facebook.com/people/Rajesh-Saini/100047042462822/">
           <i className="fa-brands fa-facebook"></i>
         </a>
         <a href="#">
           {" "}
           <i className="fa-brands fa-twitter"></i>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/rajesh-saini-2031341a1/">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/rajesh_saini94/">
           {" "}
           <i className="fa-brands fa-instagram"></i>
         </a>
-        <a href="#">
+        <a href="https://www.youtube.com/channel/UCyxQmaZKH3yg678thDEVMGA">
           {" "}
           <i className="fa-brands fa-youtube"></i>
         </a>
-        <a href="#">
+        <a href="https://wa.me/8937800532">
           {" "}
           <i className="fa-brands fa-square-whatsapp"></i>
         </a>

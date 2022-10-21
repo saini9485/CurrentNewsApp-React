@@ -4,7 +4,7 @@
     margin: 0%;
   }
   .SignUp_Form_Text{
-    color: chartreuse
+    color: black
   }
   .Login-Container,
   .Home-Container,
@@ -18,7 +18,7 @@
     border: 3px solid green;
     padding: 10px;
     border-radius: 8px;
-    background-color: rgb(120, 37, 197);
+    background-color: white;
   }
   .SignUpPageProfile img{
     margin-top: 2px;

@@ -115,7 +115,7 @@ export function Header() {
                 }
                 end
               >
-                <i class="fa fa-user" aria-hidden="true"></i>Login
+                <i class="fa fa-user" aria-hidden="true"></i>Sign Up
               </NavLink>
             </li>
           </ul>
