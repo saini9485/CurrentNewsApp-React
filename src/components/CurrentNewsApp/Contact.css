@@ -6,6 +6,7 @@
   /* height: 70%; */
   margin: auto;
   gap: 10%;
+  border-radius: 10px;
 }
 .Contact_Card {
   text-align: center;
@@ -17,4 +18,20 @@
   /* background-color: blue; */
   /* height: 300px; */
   /* display: flex; */
+  margin: 10px;
+}
+.Contact_Input_Box{
+  height: 30px;
+  width: 300px;
+  margin: 5px;
+}
+.Contact_Input_Massage_Box{
+  height: 150px;
+  width: 300px; 
+}
+
+.Contact_Form_Send_Btn{
+  width: 70px;
+  height: 30px;
+  margin-top: 10px;
 }

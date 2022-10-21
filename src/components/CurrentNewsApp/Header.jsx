@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 export function Header() {
   const [toggle, setToggle] = useState(true);
   if (toggle) {
@@ -24,9 +24,12 @@ export function Header() {
       <div className="Main_Head_Bar">
         <div className="Header_Logo">
           {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
-          <img  className="Header_Logo" src="/RajeshLogo.jpeg" alt ="image"/>
+          <img className="Header_Logo" src="/RajeshLogo.jpeg" alt="image" />
         </div>
-        <h1 className="Name_Logo"> <span className="News_Name">Current</span>_News</h1>
+        <h1 className="Name_Logo">
+          {" "}
+          <span className="News_Name">Current</span>_News
+        </h1>
         {/* <h1><span class="blue">Rajesh </span> Saini</h1> */}
         <div className="Search_Btn_Header">
           <input
@@ -39,9 +42,7 @@ export function Header() {
             <i class="fa fa-search" aria-hidden="true"></i>Search
           </button>
         </div>
-        <div>
-          {/* <h4 className="Header_Current_Date">{dt}</h4> */}
-        </div>
+        <div>{/* <h4 className="Header_Current_Date">{dt}</h4> */}</div>
         <div className="Toggle-Area">
           {toggle ? (
             <button className="Dark-Btn" onClick={() => setToggle(!toggle)}>
@@ -121,7 +122,6 @@ export function Header() {
           </ul>
         </div>
       </div>
-      //{" "}
     </div>
   );
 }
