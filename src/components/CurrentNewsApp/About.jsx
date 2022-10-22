@@ -4,6 +4,9 @@ export function About() {
   return (
     <div className="About_Card">
       <h1 class="Top_heading">ABOUT ME</h1>
+      <div class="image">
+          <img class="image" src="photo.jpeg" alt="" />
+        </div>
       <h1 className="About_Name">Rajesh Saini</h1>
       <div class="introduction_and_details">
         <div class="details">
@@ -21,7 +24,7 @@ export function About() {
           </h2>
           <h2 className="About_Detailes_Left">
             Experience :{" "}
-            <span className="About_Detailes_Right">6 Months Aircampus BootCamp Font-End Development</span>
+            <span className="About_Detailes_Right">9 Months Aircampus BootCamp Font-End Development</span>
           </h2>
           <h2 className="About_Detailes_Left">
             Currently Working :{" "}
@@ -37,9 +40,6 @@ export function About() {
           >
             MY Resume
           </a>
-        </div>
-        <div class="image">
-          <img class="image" src="photo.jpeg" alt="" />
         </div>
       </div>
       <div className="About_Career_Card">

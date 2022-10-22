@@ -1,11 +1,14 @@
 
 .Contact_Main_Container{
   /* display: flex; */
-  background-color: lightskyblue;
-  width: 60%;
+  background-color: whitesmoke;
+  width: 40%;
   height: fit-content;
   margin: auto;
   border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
 }
 .Contact_Profile_Image img{
   height: 100px;
@@ -13,6 +16,7 @@
   border-radius: 50px;
 }
 .Contact_Profile_Image{
+  margin-top: 5px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -31,9 +35,10 @@
   margin: auto;
   height: fit-content;
   width: 330px;
-  background-color: whitesmoke;
+  background-color: white;
   margin-top: 30px;
   border-radius: 10px;
+  border: 1px solid black;
 }
 .Contact_Text{
   margin-top: 15px;
@@ -105,9 +110,15 @@ margin: 7px;
   margin: 10px;
   margin: auto;
   margin-bottom: 10px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
   margin-top: 5px;
+  border: 1px solid black;
+}
+.Contact_Form_Lable{
+  font-weight: bolder;
+  margin-left: 16px;
+
 }
 .Sent_A_Massege{
   margin-left: 16px;
@@ -118,18 +129,16 @@ margin: 7px;
   margin: 5px;
   border-radius: 5px;
   text-align: start;
+  margin-left: 16px;
  
 }
 
-input[type="text"] {
-  display: block;
-  margin : 10px auto;
-}
 
 .Contact_Input_Massage_Box{
   height: 140px;
   width: 280px; 
   border-radius: 5px;
+  margin-left: 16px;
 }
 
 .Contact_Form_Send_Btn{

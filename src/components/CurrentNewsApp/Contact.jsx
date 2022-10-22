@@ -15,7 +15,7 @@ export default function Contact() {
         <h2 className="Rajesh">Rajesh Saini</h2>
         <h4 className="Front-end">Front-end Developer</h4>
       </div>
-       <h2 className="Contact_Text">Contact Me</h2>
+       <h2 className="Contact_Text">Contact us</h2>
         <div className="Contact_Icons">
           <h4>
             <span className="Contact_Address_Icons"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Noida UP 
@@ -51,21 +51,25 @@ export default function Contact() {
       <div className="Contact_Form">
         <div>
           <h2 className="Sent_A_Massege">Send A Massege </h2>
+          <label className="Contact_Form_Lable">First Name</label>
           <input
             type="text"
             placeholder="First Name"
             className="Contact_Input_Box"
           ></input>
+          <label className="Contact_Form_Lable">Last Name</label>
           <input
             type="text"
             placeholder="Last Name"
             className="Contact_Input_Box"
           ></input>
+          <label className="Contact_Form_Lable">Email</label>
           <input
             type="text"
             placeholder="Email Address"
             className="Contact_Input_Box"
           ></input>
+          <label className="Contact_Form_Lable">Massage</label>
           <input
             type="text"
             placeholder="Write Your Massage Here "
