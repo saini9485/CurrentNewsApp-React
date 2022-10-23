@@ -52,9 +52,13 @@ export function Headline() {
     }
   };
 
+  // Description
+
+
+
   return (
     <div className="Main_Container">
-      <h1 className="News-text">Top Business HeadLine News</h1>
+      {/* <h1 className="News-text">Top Business HeadLine News</h1>
       <div className="News-search">
         <form className="Head_Input_Area">
           <input
@@ -65,9 +69,9 @@ export function Headline() {
           />
           <button className="Search_Btn">Search</button>
         </form>
-      </div>
+      </div> */}
       {loading ? (
-        <h1>
+        <h1 className="fa-refresh">
           <i className="fa fa-refresh fa-spin"></i>
         </h1>
       ) : (
@@ -79,19 +83,23 @@ export function Headline() {
                 <div className="News_Data" key={items.url}>
                   <img className="Image" src={items.urlToImage} />
                   <h2>name:{items.source.name}</h2>
-                  <h2>author:{items.author}</h2>
+                  {/* <h2>author:{items.author.length>40?`${items.author.substring(0,40)}.`:items.author}</h2> */}
                   <p className="Title"> title:{items.title} </p>
-                  <p>body:{items.description}</p>
+                  <p>{items.description.length>120?`${items.description.substring(0,120)}...`:items.description}</p>
+                  <div className="Publice_Time">
+                      <h5>Publish Time:</h5>
+                      <p>{items.publishedAt}</p>
+                    </div>
                   <div className="ReadMore-Btn">
                     <a href={items.url}>Read More...</a>
                   </div>
                   <DataButton />
 
                   <div className="like_icons">
-                    <div className="Publice_Time">
+                    {/* <div className="Publice_Time">
                       <h5>Publice Time:</h5>
                       <p>{items.publishedAt}</p>
-                    </div>
+                    </div> */}
                     <div className="post_comment">
                       <h5>userName</h5>
                       <p className="NewsComment">{comment}</p>

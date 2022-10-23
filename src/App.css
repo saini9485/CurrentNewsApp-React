@@ -116,8 +116,10 @@ h1 {
 }
 /* NavBar Area */
 .Header-Container {
-  background-color: tomato;
+  background-color: whitesmoke;
   position: sticky;
+  color: black;
+  border-bottom: 2px solid black;
 }
 /* .NavBar_Icon {
   width: 100%;
@@ -136,7 +138,7 @@ h1 {
   margin: 15px;
   text-decoration: none;
   list-style-type: none;
-  color: white;
+  color: black;
 }
 .active-link {
   font-weight: bold;
@@ -147,7 +149,8 @@ h1 {
   font-weight: bold;
 }
 .not-active {
-  color: white;
+  color: black;
+
 }
 
 

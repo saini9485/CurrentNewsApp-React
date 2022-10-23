@@ -30,19 +30,29 @@
   color: black;
 }
 
+.fa-refresh{
+  display: block;
+  margin: auto;
+  /* height: 50vh; */
+}
+
+.Main_Container{
+  display: flex;
+  width: 100%;
+ flex-wrap: wrap;
+  
+}
+
 /* Data Part */
 .News_Cart{
-    height: 750px; 
+    height: 620px; 
    width: 600px;
-  /* width: 90%;  */
-   margin: 10px;
-   padding-bottom: 15px;
+   /* padding-bottom: 15px; */
   background-color: white;
-  /* box-shadow: 0 0 4px #6d6d6d; */
   align-items: center;
   min-width: 300px;
   min-width: 300px;
-  margin: 0 auto;
+  margin-left: 30px;
   margin-top: 10px;
   border-radius: 10px;
   border: 2px solid white;
@@ -61,17 +71,24 @@
 }
  .Image{
     width:500px ;
-    height:300px ;
+    height:250px ;
     /* float: left; */
     border-radius: 5px;
-    margin-right: 10px;
+    margin: auto;
+    display: block;
+
   
 }
 .Title{
-  color: red;
+  color: black;
   font-weight: bold;
 }
-
+.Publice_Time{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3px;
+}
 
 .ReadMore-Btn a{
   display: flex;
@@ -86,6 +103,7 @@
   background-color: blue;
   color: white;
   width: 100px;
+  margin-top: 6px;
 }
 
 
@@ -99,6 +117,7 @@
   display: flex;
   justify-content: space-around;
    margin-top: 10px;
+   cursor: pointer;
    /* margin-right: 10px; */
 }
 .fa-heart{
@@ -132,12 +151,7 @@ color: blue;
   justify-content: space-around;
  
 }
-.Publice_Time{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 10px;
-}
+
 .post_comment{
   display: flex;
   align-items: center;
