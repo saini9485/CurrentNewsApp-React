@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 export function Header() {
   const [toggle, setToggle] = useState(true);
+  const [search, setSearch] = useState("")
   if (toggle) {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
@@ -10,27 +11,21 @@ export function Header() {
     document.body.style.color = "white";
   }
 
-  // let showdate = new Date();
-  // let dispalytodaydate =
-  //   showdate.getDate() +
-  //   "/" +
-  //   (showdate.getMonth() + 1) +
-  //   "/" +
-  //   showdate.getFullYear();
-  // let dt = showdate.toDateString();
-
   return (
     <div>
       <div className="Main_Head_Bar">
+
         <div className="Header_Logo">
           {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
+          <NavLink to ="/">
           <img className="Header_Logo" src="/RajeshLogo.jpeg" alt="image" />
+          </NavLink>
         </div>
-        <h1 className="Name_Logo">
-          {" "}
+        {/* <NavLink to="/"> */}
+       <h1 className="Name_Logo">
           <span className="News_Name">Current</span>_News
         </h1>
-        {/* <h1><span class="blue">Rajesh </span> Saini</h1> */}
+         {/* </NavLink> */}
         <div className="Search_Btn_Header">
           <input
             className="Search_Input_Box"
@@ -42,19 +37,10 @@ export function Header() {
             <i class="fa fa-search" aria-hidden="true"></i>Search
           </button>
         </div>
-        <div>{/* <h4 className="Header_Current_Date">{dt}</h4> */}</div>
-        <div className="Toggle-Area">
-          {toggle ? (
-            <button className="Dark-Btn" onClick={() => setToggle(!toggle)}>
-              <i className="fa fa-moon" aria-hidden="true"></i>
-            </button>
-          ) : (
-            <button className="Light-Btn" onClick={() => setToggle(!toggle)}>
-              <i className="fa fa-sun" aria-hidden="true"></i>
-            </button>
-          )}
+        <div>
         </div>
       </div>
+      <nav className="navbar">
       <div className="Header-Container">
         <div className="NavBar_Icon">
           <ul className="Nav_Icons">
@@ -118,12 +104,28 @@ export function Header() {
               >
                 <i class="fa fa-user" aria-hidden="true"></i>Sign Up
               </NavLink>
+              
             </li>
+            <div className="Toggle-Area">
+          {toggle ? (
+            <button className="Dark-Btn" onClick={() => setToggle(!toggle)}>
+              <i className="fa fa-moon" aria-hidden="true"></i>
+            </button>
+          ) : (
+            <button className="Light-Btn" onClick={() => setToggle(!toggle)}>
+              <i className="fa fa-sun" aria-hidden="true"></i>
+            </button>
+          )}
+          {/* <div style={{display:"flex"}}>
+          <input></input>
+          <button>Search</button>
+          </div>*/}
+        </div> 
           </ul>
         </div>
+       
       </div>
+       </nav>
     </div>
   );
 }
-
-//   .get(`https://jsonplaceholder.typicode.com/comments`)

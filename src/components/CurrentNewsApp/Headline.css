@@ -45,7 +45,7 @@
 
 /* Data Part */
 .News_Cart{
-    height: 620px; 
+    height: 600px; 
    width: 600px;
    /* padding-bottom: 15px; */
   background-color: white;
@@ -90,53 +90,73 @@
   margin-top: 3px;
 }
 
-.ReadMore-Btn a{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  border: none;
-  text-decoration: none;
-  list-style-type: none;
-  font-weight: bold;
-  border: 2px solid blue;
-  border-radius: 10px;
-  background-color: blue;
-  color: white;
-  width: 100px;
-  margin-top: 6px;
+/* ReadMore And Delete Btn */
+.Delete_Btn_Container{
+padding: 10px;
 }
+
+.ReadMore_News_Btn a {
+  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  background-color: rgb(24, 19, 19);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+
+}
+
+.News_Remove-Btn {
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+  padding: 8px 20px;
+  background-color: rgb(255, 47, 47);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.News_Remove-Btn:hover {
+  background-color: rgb(255, 13, 13);
+  transition: 0.3s;
+}
+
 
 
 
 /* Icons Part */
-.News-button_area{
+/* .News-button_area{
   margin-bottom: 10px;
-}
-
-.Three-Btn{
+} */
+.Reaction-Btn_Container{
   display: flex;
-  justify-content: space-around;
-   margin-top: 10px;
-   cursor: pointer;
-   /* margin-right: 10px; */
+  justify-content: start;
+  gap: 20px;
+ cursor: pointer; 
 }
 .fa-heart{
   margin-left: 10px;
+  color: #ff495e;
 }
 .fa-heart:hover{
 color: red;
-background-position:right ;
-animation: animate .8s steps(28) 1;
-}
-@keyframes animate {
-  0%{
-    background-position: left;
-  }
-  100%{
-    background-position: right;
-  }
 }
 
+.fa-thumbs{
+  color: black;
+}
+.fa-thumbs:hover{
+  color: black;
+}
+.fa-comment{
+   color: #5656ff;
+}
+.fa-comment:hover{
+  color: blue;
+}
 .fa-bookmark:hover{
 color: blue;
 

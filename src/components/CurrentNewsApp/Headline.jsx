@@ -52,10 +52,6 @@ export function Headline() {
     }
   };
 
-  // Description
-
-
-
   return (
     <div className="Main_Container">
       {/* <h1 className="News-text">Top Business HeadLine News</h1>
@@ -85,21 +81,33 @@ export function Headline() {
                   <h2>name:{items.source.name}</h2>
                   {/* <h2>author:{items.author.length>40?`${items.author.substring(0,40)}.`:items.author}</h2> */}
                   <p className="Title"> title:{items.title} </p>
-                  <p>{items.description.length>120?`${items.description.substring(0,120)}...`:items.description}</p>
+                  <p>
+                    {items.description.length > 120
+                      ? `${items.description.substring(0, 120)}...`
+                      : items.description}
+                  </p>
                   <div className="Publice_Time">
-                      <h5>Publish Time:</h5>
-                      <p>{items.publishedAt}</p>
-                    </div>
-                  <div className="ReadMore-Btn">
-                    <a href={items.url}>Read More...</a>
+                    <h5>Publish Time:</h5>
+                    <p>{items.publishedAt}</p>
                   </div>
+                  <div className="Delete_Btn_Container">
+                    <button className="ReadMore_News_Btn">
+                      <a href={items.url} >
+                        Read More
+                      </a>
+                    </button>
+                    <button className="News_Remove-Btn"   key={items.url}
+                      onClick={() => handleRemove(items.url)}  >Remove</button>
+                  </div>
+                  {/* <div className="ReadMore-News_Btn">
+                   <button className="ReadMore_Btn"> <a href={items.url}>Read More...</a></button>
+                  </div>
+                  <div className="Delete_News_Btn">
+                    <button className="Delete_News">Delete</button>
+                    </div> */}
                   <DataButton />
 
                   <div className="like_icons">
-                    {/* <div className="Publice_Time">
-                      <h5>Publice Time:</h5>
-                      <p>{items.publishedAt}</p>
-                    </div> */}
                     <div className="post_comment">
                       <h5>userName</h5>
                       <p className="NewsComment">{comment}</p>
@@ -117,14 +125,14 @@ export function Headline() {
                       Comment
                     </button>
                   </div>
-                  <div className="News_Delete_Btn">
+                  {/* <div className="News_Delete_Btn">
                     <i
                       class="fa fa-trash"
                       aria-hidden="true"
                       key={items.url}
                       onClick={() => handleRemove(items.url)}
                     ></i>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );

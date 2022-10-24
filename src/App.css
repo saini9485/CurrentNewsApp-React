@@ -49,6 +49,8 @@ h1 {
   margin-left: 10px;
   font-size: 180%;
 }
+
+
 .Search_Input_Box {
   height: 33px;
   text-align: center;
@@ -77,65 +79,57 @@ h1 {
   margin: auto;
 }
 
-.Header_Current_Date{
+/* .Header_Current_Date{
   margin-top: 15px;
   margin-right: 10px;
   border: 2px solid black;
   border-radius: 5px;
   background-color: bisque;
   color: black;
-}
+} */
 
 
 
 /* Toggle Part */
 
 .Toggle-Area{
-  margin-right: 20px;
 }
 .Dark-Btn {
-  background-color: black;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 3px;
-}
-.Light-Btn {
-  background-color: lightcoral;
   color: black;
   font-weight: bold;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  font-weight: bold;
   font-size: 1.5rem;
-  margin-top: 3px;
+  margin-top: 18px;
+  border: none;
+  outline: none;
 }
+.Light-Btn {
+  color: lightsalmon;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 18px;
+  border: none;
+  outline: none;
+}
+
 /* NavBar Area */
 .Header-Container {
   background-color: whitesmoke;
   position: sticky;
-  color: black;
   border-bottom: 2px solid black;
+  height: 60px;
 }
-/* .NavBar_Icon {
-  width: 100%;
-  display: flex;
-  display: inline-flex;
-  text-align: center;
-  justify-content: space-around;
-} */
+
 .Nav_Icons {
   display: flex;
   margin-right: 30px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 .Nav_Icons li {
-  margin: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  /* margin: 15px; */
   text-decoration: none;
   list-style-type: none;
   color: black;
