@@ -2,6 +2,7 @@
   color:black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 5px;
+  margin-top: 8px;
 
 }
 
@@ -162,8 +163,16 @@ color: blue;
 
 }
 
-
+.fa-share{
+  
+}
 /* Activity Items Part */
+.News_Count{
+  color: black;
+  margin-left: 5px;
+
+
+}
 
 .LikeDislike_Count{
   display: flex;
@@ -171,6 +180,7 @@ color: blue;
   justify-content: space-around;
  
 }
+
 
 .post_comment{
   display: flex;
