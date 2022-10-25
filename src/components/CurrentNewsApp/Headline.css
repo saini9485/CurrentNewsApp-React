@@ -215,6 +215,12 @@ margin-left: 17px;
   outline: none;
   width: 350px;
 }
+.Comment_DeleteBtn{
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 5px;
+}
 .Comment_Btn{
   display: flex;
   border-radius: 10px;

@@ -21,7 +21,7 @@ export function App() {
     <Route path="/Home" element={ <Home/>}/>
     <Route path="/About" element={<About/>}/>
     <Route path="/Contact" element={<Contact/>}/>
-    <Route path="/Login" element={<Login/>}/>
+    <Route path="/Login" element={<Login />}/>
     
     <Route path="*" element={ <ErrorPage/>}/>
    </Routes>

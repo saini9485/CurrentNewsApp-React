@@ -10,6 +10,7 @@ export function Header() {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
   }
+  
 
   return (
     <div>
@@ -102,7 +103,7 @@ export function Header() {
                 }
                 end
               >
-                <i class="fa fa-user" aria-hidden="true"></i>Sign Up
+                <i class="fa fa-user" aria-hidden="true"></i> Sign Up
               </NavLink>
               
             </li>
@@ -126,6 +127,7 @@ export function Header() {
        
       </div>
        </nav>
+  
     </div>
   );
 }
