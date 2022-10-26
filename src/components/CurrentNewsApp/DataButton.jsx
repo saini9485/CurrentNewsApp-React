@@ -54,7 +54,7 @@ export function DataButton() {
           <i className="fas fa-comment fa-1.5x" onClick={ShowComment}></i>
           {commentCounter}
         </span>
-         <i className="fa-solid fa-share " ></i>
+        <i className="fa-solid fa-share "></i>
       </div>
       {/*<div className="Share_Btn">  <i className="fa-solid fa-share"></i></div>
         // <div className="BookMark-Btn"> 
@@ -66,23 +66,21 @@ export function DataButton() {
         <h5 className="Dislike_Count"> Share</h5>
         <h5 className="SavedUnSaved">{saved}</h5>
       </div> */}
-{
-comment.map((item)=>(
-  <div className="post_comment">
-          <h5> {localStorage.getItem('Fullname')}</h5>
-          <p  className="NewsComment">{item}</p>
-           <button className="Comment_DeleteBtn"
+      {comment.map((item) => (
+        <div className="post_comment">
+          <h5> {localStorage.getItem("Fullname")}</h5>
+          <p className="NewsComment">{item}</p>
+          <button
+            className="Comment_DeleteBtn"
             onClick={() => {
               let filteredComment = comment.filter((value) => value !== item);
               setComment([...filteredComment]);
             }}
           >
-         <i class="fa fa-trash fa-1x "></i>
-          </button> 
-      </div>
-))
-}
-      
+            <i class="fa fa-trash fa-1x "></i>
+          </button>
+        </div>
+      ))}
 
       <div className="add-comment">
         <input

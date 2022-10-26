@@ -103,7 +103,7 @@ export function Header() {
                 }
                 end
               >
-                <i class="fa fa-user" aria-hidden="true"></i> Sign Up
+                <i class="fa fa-user" aria-hidden="true"></i> {localStorage.getItem("Fullname")}
               </NavLink>
               
             </li>
