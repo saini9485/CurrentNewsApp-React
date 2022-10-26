@@ -1,5 +1,9 @@
 Current News Project 
 
+
+Deployment Link
+https://rsnews90.netlify.app/
+
 Deployment Link
 https://rsnews94.netlify.app/
 
