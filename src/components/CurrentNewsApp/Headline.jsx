@@ -45,7 +45,7 @@ export function Headline() {
   return (
     <>
       <h1 className="News-text">Top Business HeadLine News</h1>
-      {/* <div className="News-search">
+      <div className="News-search">
         <form className="Head_Input_Area">
           <input
             className="News-input"
@@ -55,7 +55,7 @@ export function Headline() {
           />
           <button className="Search_Btn">Search</button>
         </form>
-      </div> */}
+      </div>
       <div className="Main_Container">
         {loading ? (
           <h1 className="fa-refresh">

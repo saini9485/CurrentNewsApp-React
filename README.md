@@ -1,4 +1,8 @@
 Current News Project 
+
+Deployment Link
+https://rsnews94.netlify.app/
+
 <h1>OutPut</h1>
 <img src="Screenshot (1144).png" alt="Output Image">
 <img src="Screenshot (1145).png" alt="Output Image">

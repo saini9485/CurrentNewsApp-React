@@ -27,7 +27,7 @@ export function Header() {
           <span className="News_Name">Current</span>_News
         </h1>
          {/* </NavLink> */}
-        <div className="Search_Btn_Header">
+        {/* <div className="Search_Btn_Header">
           <input
             className="Search_Input_Box"
             type="text"
@@ -37,7 +37,7 @@ export function Header() {
             {" "}
             <i class="fa fa-search" aria-hidden="true"></i>Search
           </button>
-        </div>
+        </div> */}
         <div>
         </div>
       </div>
