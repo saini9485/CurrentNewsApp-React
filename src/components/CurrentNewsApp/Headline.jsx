@@ -78,8 +78,8 @@ export function Headline() {
                         : items.description}
                     </p>
                     <div className="Publice_Time">
-                      <h5 style={{color:"violet"}}>Publish Time:</h5>
-                      <p style={{color:"violet"}}>{items.publishedAt}</p>
+                      <h5 style={{color:"red"}}>Publish Time:</h5>
+                      <p >{items.publishedAt}</p>
                     </div>
                     <div className="Delete_Btn_Container">
                       <div style={{display:"flex", alignItems:"center", fontSize:"large"}}>

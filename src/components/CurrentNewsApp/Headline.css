@@ -58,7 +58,7 @@
   border: 2px solid white;
   border-bottom: 2px solid black;
   /* overflow: scroll; */
-  border: 1px solid rgb(7, 7, 7);
+  /* border: 1px solid red; */
   background-color: whitesmoke;
   box-shadow:  whitesmoke;
   
@@ -91,7 +91,7 @@
   align-items: center;
   gap: 0.5rem;
   margin-top: 6px;
-  color: blueviolet;
+  font-size: small;
 }
 
 /* ReadMore And Delete Btn */
@@ -110,6 +110,8 @@ padding: 10px;
   text-decoration: none;
   outline: none;
   /* width: 150px; */
+  margin-left: 0%;
+
 
 }
 
@@ -242,6 +244,7 @@ margin: auto;
   background-color: blue;
   color: white;
   cursor: pointer;
+  font-weight: bold;
 
 
 }
