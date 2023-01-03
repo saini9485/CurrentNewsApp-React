@@ -1,11 +1,25 @@
-import React from 'react'
-import { Headline } from './Headline'
+import React from "react";
+import './Login.css';
+export function Home() {
+    const logout = () => {
+        localStorage.removeItem("signUp")
+        window.location.reload()
+    }
+    const deleteAccount = () => {
+        localStorage.clear()
+        window.location.reload()
+    }
 
-export  function Home() {
-  return (
-    <div>
-        <h1>This is Home</h1>
-        <Headline/>
+    return (
+        <div className="Home-Container">
+            <h2 >Congratulation To OurPage</h2>
+             <div className="HomePageImage">
+            <img src="/photo.jpeg" alt ="image"/>
+            </div>
+            <h3>Welcome To  {localStorage.getItem('Fullname')} </h3>
+            <button onClick={logout} className="logout">LogOut</button>
+            <button onClick={deleteAccount} className="delete">Delete</button>
+           
         </div>
-  )
+    );
 }

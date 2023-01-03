@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import Home from "./Home";
-import { DataButton } from "../DataButton";
+import { DataButton } from "./DataButton";
+import {Home} from "./Home";
+
 import './Login.css';
-function Login(){ 
+export function Login(){ 
    const Fullname=useRef()
    const email=useRef()
    const password=useRef()
@@ -86,4 +87,3 @@ function Login(){
         </div>
     );
 }
-export default Login;
