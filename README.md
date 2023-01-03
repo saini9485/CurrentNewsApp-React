@@ -2,6 +2,9 @@
 
 
 Deployment Link
+https://rscn.netlify.app/
+
+
 https://rsnews90.netlify.app/
 
 Deployment Link
