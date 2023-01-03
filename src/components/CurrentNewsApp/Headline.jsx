@@ -30,7 +30,7 @@ export function Headline() {
     if (search.trim().length <= 0) {
       return true;
     } else {
-      if (data?.source?.name?.toLowerCase().includes(search.toLowerCase())) {
+      if (data?.title?.toLowerCase().includes(search.toLowerCase())) {
         return true;
       } else {
         return false;
@@ -69,22 +69,23 @@ export function Headline() {
                 <div className="News_Cart">
                   <div className="News_Data" key={items.url}>
                     <img className="Image" src={items.urlToImage} />
-                    <h2>name:{items.source.name}</h2>
+                    {/* <h2>Name:  {items.source.name}</h2> */}
                     {/* <h2>author:{items.author.length>40?`${items.author.substring(0,40)}.`:items.author}</h2> */}
-                    <p className="Title"> title:{items.title} </p>
-                    <p>
+                    <p className="Title">{items.title.substring(0, 50)} </p>
+                    <p style={{fontSize:"small"}}>
                       {items.description.length > 120
                         ? `${items.description.substring(0, 120)}...`
                         : items.description}
                     </p>
                     <div className="Publice_Time">
-                      <h5>Publish Time:</h5>
-                      <p>{items.publishedAt}</p>
+                      <h5 style={{color:"violet"}}>Publish Time:</h5>
+                      <p style={{color:"violet"}}>{items.publishedAt}</p>
                     </div>
                     <div className="Delete_Btn_Container">
-                      <button className="ReadMore_News_Btn">
+                      <div style={{display:"flex", alignItems:"center", fontSize:"large"}}>
+                      <h6 className="ReadMore_News_Btn">
                         <a href={items.url}>Read More</a>
-                      </button>
+                      </h6>
                       <button
                         className="News_Remove-Btn"
                         key={items.url}
@@ -92,6 +93,7 @@ export function Headline() {
                       >
                         Remove
                       </button>
+                      </div>
                       {/* <i
                         style={{ marginLeft: "270px", cursor: "pointer" }}
                         className="fa-solid fa-share"

@@ -27,7 +27,7 @@ export function DataButton() {
     setCount(count + 1);
   };
   const CountDisLikes = () => {
-    setCountD(countD - 1);
+    setCountD(countD + 1);
   };
   const SavedUnSaved = () => {
     alert("Saved News");
@@ -54,7 +54,7 @@ export function DataButton() {
           <i className="fas fa-comment fa-1.5x" onClick={ShowComment}></i>
           {commentCounter}
         </span>
-        <i className="fa-solid fa-share "></i>
+        {/* <i className="fa-solid fa-share "></i> */}
       </div>
       {/*<div className="Share_Btn">  <i className="fa-solid fa-share"></i></div>
         // <div className="BookMark-Btn"> 
@@ -70,15 +70,18 @@ export function DataButton() {
         <div className="post_comment">
           <h5> {localStorage.getItem("Fullname")}</h5>
           <p className="NewsComment">{item}</p>
+          <div className="comment-btn">
           <button
             className="Comment_DeleteBtn"
             onClick={() => {
               let filteredComment = comment.filter((value) => value !== item);
               setComment([...filteredComment]);
+              setCommentCounter(commentCounter - 1);
             }}
           >
-            <i class="fa fa-trash fa-1x "></i>
+             <i class="fa fa-trash fa-1x "></i>
           </button>
+         </div>
         </div>
       ))}
 

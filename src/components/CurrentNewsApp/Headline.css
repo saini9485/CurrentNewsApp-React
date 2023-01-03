@@ -45,8 +45,8 @@
 
 /* Data Part */
 .News_Cart{
-    height: 600px; 
-   width: 600px;
+    height: fit-content; 
+   width: 550px;
    /* padding-bottom: 15px; */
   background-color: white;
   align-items: center;
@@ -60,6 +60,7 @@
   /* overflow: scroll; */
   border: 1px solid rgb(7, 7, 7);
   background-color: whitesmoke;
+  box-shadow:  whitesmoke;
   
 }
 .fa-spin{
@@ -76,18 +77,21 @@
     border-radius: 5px;
     margin: auto;
     display: block;
+    margin-bottom: 10px;
 
   
 }
 .Title{
   color: black;
   font-weight: bold;
+  margin-bottom: 6px;
 }
 .Publice_Time{
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 3px;
+  margin-top: 6px;
+  color: blueviolet;
 }
 
 /* ReadMore And Delete Btn */
@@ -105,6 +109,7 @@ padding: 10px;
   font-weight: bold;
   text-decoration: none;
   outline: none;
+  /* width: 150px; */
 
 }
 
@@ -183,13 +188,18 @@ color: blue;
 
 .post_comment{
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 10px;
+  /* gap: 100px; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* gap: 0.5rem;
+  margin-left: 10px; */
 }
-.post_time{
+/* .post_time{
   font-size:small;
   margin-left: 10px;
+} */
+.fa-trash{
+margin-left: 100px;
 }
 #id {
   height: 1000px;
@@ -219,7 +229,11 @@ margin-left: 17px;
   color: black;
   cursor: pointer;
   margin-left: 5px;
+  /* position: relative; */
 }
+/* .comment-btn{
+margin: auto;
+} */
 .Comment_Btn{
   display: flex;
   border-radius: 10px;
@@ -238,6 +252,8 @@ margin-left: 17px;
   border-left: none;
   border-right: none;
   background-color: whitesmoke;
+  outline: none;
+  border: none;
 
 }
 .News_Delete_Btn{
