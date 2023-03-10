@@ -7,7 +7,7 @@ export function About() {
       <div class="image">
           <img class="image" src="photo.jpeg" alt="" />
         </div>
-      <h1 className="About_Name">Rajesh Saini 5</h1>
+      <h1 className="About_Name">Rajesh Saini </h1>
       <div class="introduction_and_details">
         <div class="details">
           <h2 className="About_Detailes_Left">
