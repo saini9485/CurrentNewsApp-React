@@ -59,7 +59,7 @@ export function Header() {
             </li>
             <li>
               <NavLink
-                to="/Home"
+                to="/"
                 id="links"
                 className={({ isActive }) =>
                   isActive ? "active-link" : "not-active"
@@ -108,7 +108,7 @@ export function Header() {
               
             </li>
             <div className="Toggle-Area">
-          {toggle ? (
+          {/* {toggle ? (
             <button className="Dark-Btn" onClick={() => setToggle(!toggle)}>
               <i className="fa fa-moon" aria-hidden="true"></i>
             </button>
@@ -116,7 +116,7 @@ export function Header() {
             <button className="Light-Btn" onClick={() => setToggle(!toggle)}>
               <i className="fa fa-sun" aria-hidden="true"></i>
             </button>
-          )}
+          )} */}
           {/* <div style={{display:"flex"}}>
           <input></input>
           <button>Search</button>

@@ -71,6 +71,7 @@ export function Headline() {
                     <img className="Image" src={items.urlToImage} />
                     {/* <h2>Name:  {items.source.name}</h2> */}
                     {/* <h2>author:{items.author.length>40?`${items.author.substring(0,40)}.`:items.author}</h2> */}
+                    <div className="text-content"> 
                     <p className="Title">{items.title.substring(0, 50)} </p>
                     <p style={{fontSize:"small"}}>
                       {items.description.length > 120
@@ -80,6 +81,7 @@ export function Headline() {
                     <div className="Publice_Time">
                       <h5 style={{color:"red"}}>Publish Time:</h5>
                       <p >{items.publishedAt}</p>
+                    </div>
                     </div>
                     <div className="Delete_Btn_Container">
                       <div style={{display:"flex", alignItems:"center", fontSize:"large"}}>
