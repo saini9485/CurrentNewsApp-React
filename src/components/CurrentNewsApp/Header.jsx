@@ -17,27 +17,14 @@ export function Header() {
       <div className="Main_Head_Bar">
 
         <div className="Header_Logo">
-          {/* <i class="fa fa-desktop" aria-hidden="true"></i> */}
           <NavLink to ="/">
           <img className="Header_Logo" src="/RajeshLogo.jpeg" alt="image" />
           </NavLink>
         </div>
-        {/* <NavLink to="/"> */}
        <h1 className="Name_Logo">
           <span className="News_Name">Current</span>_News
         </h1>
-         {/* </NavLink> */}
-        {/* <div className="Search_Btn_Header">
-          <input
-            className="Search_Input_Box"
-            type="text"
-            placeholder="Search"
-          />
-          <button className="News_Search_Btn">
-            {" "}
-            <i class="fa fa-search" aria-hidden="true"></i>Search
-          </button>
-        </div> */}
+  
         <div>
         </div>
       </div>
