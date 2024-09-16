@@ -1,5 +1,5 @@
 <h1>Current News Project </h1>
-
+https://current-news-app-react-42i8.vercel.app/
 
 Deployment Link
 https://rsnews90.netlify.app/
