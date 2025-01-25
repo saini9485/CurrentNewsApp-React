@@ -2,7 +2,7 @@
 https://current-news-app-react-42i8.vercel.app/
 
 Deployment Link
-https://rsnews90.netlify.app/
+https://rsnews90.netlify.app/ 
 
 Deployment Link
 https://rsnews94.netlify.app/
